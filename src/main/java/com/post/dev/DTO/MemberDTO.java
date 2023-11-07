@@ -9,4 +9,6 @@ public class MemberDTO {
     private String memberSns;
     private int memberGrade;
 
+}
+
 
