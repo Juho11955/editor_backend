@@ -16,7 +16,7 @@ public class ApproveController {
 
     @GetMapping(value = "approveList", produces = "application/json; charset=utf8")
     @ResponseBody
-    public ApproveListDTO approveList(@RequestParam("listNum") int listNum) {
+    public List<ApproveListDTO> approveList(@RequestParam("listNum") int listNum) {
         return approveService.approveList(listNum);
     }
 
