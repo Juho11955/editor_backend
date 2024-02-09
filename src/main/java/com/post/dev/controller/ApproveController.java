@@ -1,7 +1,7 @@
 package com.post.dev.controller;
 
 import com.post.dev.DTO.ApproveListDTO;
-import com.post.dev.service.approve.ApproveService;
+import com.post.dev.service.post.approve.ApproveService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

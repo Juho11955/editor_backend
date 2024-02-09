@@ -1,49 +1,42 @@
 package com.post.dev.DTO;
 
+import com.post.dev.Enums.Approve;
+import com.post.dev.Enums.MemberGrade;
+
+import java.util.Date;
+
 public class MemberDTO {
 
-    private int memberSeq;
-    private String memberId;
-    private String memberPw;
+    private int memberNum;
     private String memberName;
-    private String memberSns;
-    private int memberGrade;
+    private String memberNickname;
+    private String memberEmail;
+    private String memberPassword;
+    private String memberImage;
+    private String memberIntroduce;
+    private Date memberDate;
+    private MemberGrade memberGrade;
+    private Approve memberApprove;
 
-    public MemberDTO(int memberSeq) {
-        this.memberSeq = memberSeq;
-    }
-
-    public MemberDTO(int memberSeq, String memberId, String memberPw, String memberName, String memberSns, int memberGrade) {
-        this.memberSeq = memberSeq;
-        this.memberId = memberId;
-        this.memberPw = memberPw;
+    public MemberDTO(int memberNum, String memberName, String memberNickname, String memberEmail, String memberPassword, String memberImage, String memberIntroduce, Date memberDate, MemberGrade memberGrade, Approve memberApprove) {
+        this.memberNum = memberNum;
         this.memberName = memberName;
-        this.memberSns = memberSns;
+        this.memberNickname = memberNickname;
+        this.memberEmail = memberEmail;
+        this.memberPassword = memberPassword;
+        this.memberImage = memberImage;
+        this.memberIntroduce = memberIntroduce;
+        this.memberDate = memberDate;
         this.memberGrade = memberGrade;
+        this.memberApprove = memberApprove;
     }
 
-    public int getMemberSeq() {
-        return memberSeq;
+    public int getMemberNum() {
+        return memberNum;
     }
 
-    public void setMemberSeq(int memberSeq) {
-        this.memberSeq = memberSeq;
-    }
-
-    public String getMemberId() {
-        return memberId;
-    }
-
-    public void setMemberId(String memberId) {
-        this.memberId = memberId;
-    }
-
-    public String getMemberPw() {
-        return memberPw;
-    }
-
-    public void setMemberPw(String memberPw) {
-        this.memberPw = memberPw;
+    public void setMemberNum(int memberNum) {
+        this.memberNum = memberNum;
     }
 
     public String getMemberName() {
@@ -54,20 +47,68 @@ public class MemberDTO {
         this.memberName = memberName;
     }
 
-    public String getMemberSns() {
-        return memberSns;
+    public String getMemberNickname() {
+        return memberNickname;
     }
 
-    public void setMemberSns(String memberSns) {
-        this.memberSns = memberSns;
+    public void setMemberNickname(String memberNickname) {
+        this.memberNickname = memberNickname;
     }
 
-    public int getMemberGrade() {
+    public String getMemberEmail() {
+        return memberEmail;
+    }
+
+    public void setMemberEmail(String memberEmail) {
+        this.memberEmail = memberEmail;
+    }
+
+    public String getMemberPassword() {
+        return memberPassword;
+    }
+
+    public void setMemberPassword(String memberPassword) {
+        this.memberPassword = memberPassword;
+    }
+
+    public String getMemberImage() {
+        return memberImage;
+    }
+
+    public void setMemberImage(String memberImage) {
+        this.memberImage = memberImage;
+    }
+
+    public String getMemberIntroduce() {
+        return memberIntroduce;
+    }
+
+    public void setMemberIntroduce(String memberIntroduce) {
+        this.memberIntroduce = memberIntroduce;
+    }
+
+    public Date getMemberDate() {
+        return memberDate;
+    }
+
+    public void setMemberDate(Date memberDate) {
+        this.memberDate = memberDate;
+    }
+
+    public MemberGrade getMemberGrade() {
         return memberGrade;
     }
 
-    public void setMemberGrade(int memberGrade) {
+    public void setMemberGrade(MemberGrade memberGrade) {
         this.memberGrade = memberGrade;
+    }
+
+    public Approve getMemberApprove() {
+        return memberApprove;
+    }
+
+    public void setMemberApprove(Approve memberApprove) {
+        this.memberApprove = memberApprove;
     }
 }
 

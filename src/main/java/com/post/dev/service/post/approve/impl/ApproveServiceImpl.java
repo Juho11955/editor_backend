@@ -1,7 +1,7 @@
-package com.post.dev.service.approve.impl;
+package com.post.dev.service.post.approve.impl;
 
 import com.post.dev.DTO.ApproveListDTO;
-import com.post.dev.service.approve.ApproveService;
+import com.post.dev.service.post.approve.ApproveService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

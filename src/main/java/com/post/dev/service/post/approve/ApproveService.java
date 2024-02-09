@@ -1,4 +1,4 @@
-package com.post.dev.service.approve;
+package com.post.dev.service.post.approve;
 
 import com.post.dev.DTO.ApproveListDTO;
 
