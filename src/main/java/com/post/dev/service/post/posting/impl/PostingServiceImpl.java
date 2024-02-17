@@ -3,9 +3,11 @@ package com.post.dev.service.post.posting.impl;
 import com.post.dev.DTO.PostDTO;
 import com.post.dev.Enums.Result;
 import com.post.dev.service.post.posting.PostingService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class PostingServiceImpl implements PostingService {
 
     // 포스팅 저장
